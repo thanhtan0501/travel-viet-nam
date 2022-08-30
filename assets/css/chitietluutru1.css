@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    /* để xét giá trị mặc định cho web */
+    padding: 0;
+    /* để xét giá trị mặc định cho web */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* anh nên xét giá trị margin=0 cho phần body, còn auto thì mình nên xét từng phần hoặc lúc @media */
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    /* cài đặt cái giá trị ban đầu cho phần body */
+}
+
+html {
+    scroll-behavior: smooth;
+    /* giúp mượt hơn khi scroll */
+}
+
+ul {
+    list-style: none;
+    /* cài đặt giá trị mặc định cho thẻ ul */
+}
+
+a {
+    text-decoration: none;
+    /* không để gạch chân cho thẻ a  */
+}
+
+img {
+    max-width: 100%;
+    /* mình nên xét max-width thay vì width, tại mình có thể thay đổi width khi thay đổi @media screen  */
+    height: auto;
+    opacity: 1;
+    /* opacity=1 ở đây có cũng được mà ko có cũng ko sao */
+}
+
+
+/* .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.container {
+    max-width: 968px;
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+    /* thiết lập giá trị container sử dụng cho nhiều phần nhỏ */
+}
+
+
+/* HEADER */
+
+
+/* header{
+    position: relative;
+} */
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    /* background-color: var(--first-color); */
+    background-color: transparent;
+}
+
+.main {
+    position: relative;
+}
+
+
+/* NAV */
+
+.nav {
+    max-width: 968px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo,
+.nav_toggle {
+    color: var(--white-color);
+}
+
+.nav_logo {
+    font-weight: var(--font-semi-bold);
+}
+
+.nav_toggle {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.nav_menu {
+    position: relative;
+}
+
+@media screen and (max-width: 767px) {
+    .nav_menu {
+        position: fixed;
+        background-color: var(--body-color);
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100%;
+        box-shadow: -1px 0 4px hsl(var(--hue-color), 64%, 15%, .15);
+        padding: 3rem;
+        transition: .4s;
+    }
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.nav_link {
+    color: var(--text-color-light);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+}
+
+.nav_link:hover {
+    color: var(--text-color);
+}
+
+.nav_close {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.show-menu {
+    right: 0;
+}
+
+
+/* Khi scroll thì thay đổi màu thanh nav */
+
+.scroll-header {
+    background-color: var(--body-color);
+    box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 15%, 0.15);
+}
+
+.scroll-header .nav_logo,
+.scroll-header .nav_toggle {
+    color: var(--title-color);
+}
+
+
+/* HOME */
+
+.home {
+    height: 50vh;
+    position: relative;
+}
+
+.home_container {
+    position: relative;
+    height: 50vh;
+    align-content: center;
+    display: grid;
+}
+
+.img-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.center {
+    /* position: absolute;
+    color: rgb(255, 255, 255);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px; */
+}
+
+.home_center-title {
+    color: white;
+    font-size: var(--biggest-font-size);
+    text-align: center;
+}
+
+
+/* .topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+} */
+
+.collection_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: hsl(0, 0%, 85%);
+    transition: .3s;
+    column-gap: 1.5rem;
+}
+
+.phot-room {
+    width: 400px;
+    /* 
+    align-items: center;
+    justify-content: center;
+    object-fit: cover; */
+}
+
+.collection_data-subtitle {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.collection_data-title,
+.collection_data-subtitle {
+    margin-bottom: .5rem;
+}
+
+.collection_data-description {
+    margin-bottom: 1rem;
+}
+
+
+/* .content {
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+} */
+
+.card-info-room {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 10px;
+    max-width: 250px;
+}
+
+
+/* .btn {
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+} */
+
+.card-image-room {
+    object-fit: cover;
+}
+
+.room {
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.room-info {
+    display: flex;
+}
+
+.head {
+    width: 300px;
+    padding: 30px;
+    align-items: center;
+    object-fit: cover;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.card {
+    overflow: hidden;
+    background-color: rgb(251, 2548, 241);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: calc(25% -30px);
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.card-image {
+    padding: 5px;
+    margin: 10px;
+    height: 200px;
+    width: 20%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    background-color: #f1f1f1;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-info {
+    padding: 10px;
+}
+
+.about-info-1 {
+    padding: 30px;
+    width: 150px;
+}

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="shortcut icon"
+            href="./assets/img/favicon.png"
+            type="image/x-icon"
+        />
+
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="./assets/css/home.css" />
+        <link rel="stylesheet" href="./assets/css/contact.css" />
+
+        <title>Travel VN</title>
+    </head>
+
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="./index.html" class="nav_logo">Travel VN</a>
+
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="./index.html" class="nav_link"
+                                >Trang Chủ</a
+                            >
+                        </li>
+                        <li class="nav_item">
+                            <a href="./about.html" class="nav_link"
+                                >Giới Thiệu</a
+                            >
+                        </li>
+                        <li class="nav_item">
+                            <a href="./hotel.html" class="nav_link"
+                                >Khách Sạn</a
+                            >
+                        </li>
+                        <li class="nav_item">
+                            <a href="./tour.html" class="nav_link">Tour</a>
+                        </li>
+                        <li class="nav_item">
+                            <a
+                                href="./contact.html"
+                                class="nav_link active_link"
+                                >Liên Hệ</a
+                            >
+                        </li>
+                    </ul>
+                    <i class="ri-close-line nav_close" id="nav-close"></i>
+                </div>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="main_header">
+                <img
+                    src="./assets/img/contact/contact.jpg"
+                    alt="about"
+                    class="main_header-img"
+                />
+            </section>
+
+            <section class="banner section">
+                <div class="banner_container container">
+                    <div class="banner_container-list grid">
+                        <div class="banner_box">
+                            <div class="card_img">
+                                <i class="ri-smartphone-line banner_icon"></i>
+                            </div>
+                            <div class="banner_data">
+                                <div class="banner_content-top">
+                                    <h3 class="banner_title">Phone</h3>
+                                    <div class="banner_detail">
+                                        <a
+                                            href="tel:+84978172597"
+                                            class="banner_subtitle"
+                                            >(+84) 978172597</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner_box">
+                            <div class="card_img">
+                                <i class="ri-mail-open-fill banner_icon"></i>
+                            </div>
+                            <div class="banner_data">
+                                <div class="banner_content-top">
+                                    <h3 class="banner_title">Email</h3>
+                                    <div class="banner_detail">
+                                        <a
+                                            href="mailto:info@yoursite.com"
+                                            class="banner_subtitle"
+                                            >travelvietnam@email.com</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner_box">
+                            <div class="card_img">
+                                <i class="ri-map-pin-2-fill banner_icon"></i>
+                            </div>
+                            <div class="banner_data">
+                                <div class="banner_content-top">
+                                    <h3 class="banner_title">Address</h3>
+                                    <div class="banner_detail">
+                                        <span class="banner_subtitle"
+                                            >12 Trương Định, Quận 3, TPHCM, Việt
+                                            Nam</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact">
+                <div class="contact_container">
+                    <div class="contact_container-list grid">
+                        <div class="contact_box">
+                            <h2 class="section_title contact_title">
+                                Liên hệ chúng tôi
+                            </h2>
+                            <form action="/action_page.php" target="_blank">
+                                <p>
+                                    <input
+                                        class="w3-input w3-padding-16 w3-border"
+                                        type="text"
+                                        placeholder="Name"
+                                        required=""
+                                        name="Name"
+                                    />
+                                </p>
+                                <p>
+                                    <input
+                                        class="w3-input w3-padding-16 w3-border"
+                                        type="text"
+                                        placeholder="Email"
+                                        required=""
+                                        name="Email"
+                                    />
+                                </p>
+                                <p>
+                                    <textarea
+                                        name="Message"
+                                        class="w3-input w3-padding-16 w3-border"
+                                        cols="30"
+                                        rows="12"
+                                        placeholder="Message"
+                                        style="resize: none"
+                                    ></textarea>
+                                </p>
+                                <p>
+                                    <button
+                                        class="w3-padding-large button"
+                                        type="submit"
+                                    >
+                                        SEND MESSAGE
+                                    </button>
+                                </p>
+                            </form>
+                        </div>
+                        <div class="contact_box">
+                            <h2 class="section_title contact_title">Bản Đồ</h2>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.452424260138!2d106.68915425045516!3d10.77661919228371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3a564f8383%3A0xfa8cf603811bdf69!2zMTIgVHLGsMahbmcgxJDhu4tuaCwgUGjGsOG7nW5nIDYsIFF14bqtbiAzLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1629149339455!5m2!1svi!2s"
+                                style="border: 0"
+                                allowfullscreen=""
+                                loading="lazy"
+                                class="contact_map"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sponsor section">
+                <div class="sponsor_container container grid">
+                    <div class="sponsor_content">
+                        <img
+                            src="./assets/img/sponsor/agoda.png"
+                            alt="agoda-icon"
+                            class="sponsor_img"
+                        />
+                    </div>
+                    <div class="sponsor_content">
+                        <img
+                            src="./assets/img/sponsor/booking.png"
+                            alt="booking-icon"
+                            class="sponsor_img"
+                        />
+                    </div>
+                    <div class="sponsor_content">
+                        <img
+                            src="./assets/img/sponsor/kayak.png"
+                            alt="kayak-icon"
+                            class="sponsor_img"
+                        />
+                    </div>
+                    <div class="sponsor_content">
+                        <img
+                            src="./assets/img/sponsor/rentalcars.png"
+                            alt="rentalcars-icon"
+                            class="sponsor_img"
+                        />
+                    </div>
+                    <div class="sponsor_content">
+                        <img
+                            src="./assets/img/sponsor/opentable.png"
+                            alt="opentable-icon"
+                            class="sponsor_img"
+                        />
+                    </div>
+                    <div class="sponsor_content">
+                        <img
+                            src="./assets/img/sponsor/priceline.png"
+                            alt="priceline-icon"
+                            class="sponsor_img"
+                        />
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="section footer">
+            <div class="footer_container container grid">
+                <div class="footer_content grid">
+                    <div class="footer_data">
+                        <h3 class="footer_title">Travel VN</h3>
+                        <p class="footer_description">
+                            Công ty cổ phần du lịch Việt Nam
+                        </p>
+
+                        <div class="footer_social">
+                            <a
+                                href="https://www.fb.com"
+                                class="footer_social-link"
+                                target="_blank"
+                            >
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a
+                                href="https://www.instagram.com"
+                                class="footer_social-link"
+                                target="_blank"
+                                ><i class="ri-instagram-fill"></i>
+                            </a>
+                            <a
+                                href="https://twitter.com"
+                                class="footer_social-link"
+                                target="_blank"
+                            >
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a
+                                href="https://www.youtube.com"
+                                class="footer_social-link"
+                                target="_blank"
+                                ><i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer_data">
+                        <h3 class="footer_subtitle">Giới Thiệu</h3>
+                        <ul>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Chúng Tôi</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link"
+                                    >Travel VN Blog</a
+                                >
+                            </li>
+                            <!-- <li class="footer_item">
+                            <a href="#" class="footer_link"></a>
+                        </li> -->
+                        </ul>
+                    </div>
+                    <div class="footer_data">
+                        <h3 class="footer_subtitle">Trợ Giúp</h3>
+                        <ul>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link"
+                                    >Trung Tâm Trợ Giúp</a
+                                >
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link"
+                                    >Câu Hỏi Thường Gặp</a
+                                >
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Tuyển Dụng</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link"
+                                    >Liên Hệ Chúng Tôi</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_data">
+                        <h3 class="footer_subtitle">Đối Tác</h3>
+                        <ul>
+                            <li class="footer_item">
+                                <a
+                                    href="https://ycs.agoda.com/vi-vn/kipp/public/home"
+                                    class="footer_link"
+                                    >Cổng thông tin đối tác YCS</a
+                                >
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link"
+                                    >Quảng Cáo Trên Travel VN</a
+                                >
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link"
+                                    >Đối Tác Liên Kết</a
+                                >
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link"
+                                    >Đối Tác Kết Nối</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_right">
+                    <p class="footer_copy">
+                        Copyright &#169; 2021 - Công ty cổ phần du lịch Việt Nam
+                        Travel VN
+                    </p>
+                    <div class="footer_terms">
+                        <a href="#" class="footer_terms-link"
+                            >Điều Kiện & Điều Khoản</a
+                        >
+                        <a href="#" class="footer_terms-link"
+                            >Chính Sách Bảo Mật</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup_icon"></i>
+        </a>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="./assets/js/home.js"></script>
+    </body>
+</html>

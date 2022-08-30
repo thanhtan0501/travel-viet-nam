@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/hotel.css">
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="./index.html" class="nav_logo">Travel VN</a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="./index.html" class="nav_link ">Trang Chủ</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./about.html" class="nav_link">Giới Thiệu</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./hotel.html" class="nav_link  active_link">Khách Sạn</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./tour.html" class="nav_link">Tour</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./contact.html" class="nav_link">Liên Hệ</a>
+                    </li>
+                </ul>
+                <i class="ri-close-line nav_close" id="nav-close"></i>
+            </div>
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="main_header ">
+            <img src="./assets/img/hotel/hotel.jpg" alt="about" class="main_header-img">
+        </section>
+
+
+        <section class="banner section">
+            <div class="banner_container container">
+                <div class="banner_container-list grid">
+                    <div class="banner_box">
+                        <div class="card_img">
+                            <img src="./assets/img/hotel/icon/icon_support1.svg" alt="" class="banner_img">
+                        </div>
+                        <div class="banner_data">
+                            <div class="banner_content-top">
+                                <h3 class="banner_title">Hỗ trợ khách hàng 24/7</h3>
+                                <div class="banner_detail">
+                                    <span class="banner_subtitle">Chat là có, gọi là nghe, không quản đêm hôm, ngày nghỉ và ngày lễ.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner_box">
+                        <div class="card_img">
+                            <img src="./assets/img/hotel/icon/icon_support2.svg" alt="" class="banner_img">
+                        </div>
+                        <div class="banner_data">
+                            <div class="banner_content-top">
+                                <h3 class="banner_title">Giá tốt sát ngày</h3>
+                                <div class="banner_detail">
+                                    <span class="banner_subtitle">Cam kết giá tốt nhất khi đặt gần ngày cho chuyến đi của bạn.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner_box">
+                        <div class="card_img">
+                            <img src="./assets/img/hotel/icon/icon_support3.svg" alt="" class="banner_img">
+                        </div>
+                        <div class="banner_data">
+                            <div class="banner_content-top">
+                                <h3 class="banner_title">Thanh toán dễ dàng, đa dạng</h3>
+                                <div class="banner_detail">
+                                    <span class="banner_subtitle">Bao gồm thêm chuyển khoản ngân hàng và tiền mặt tại cửa hàng.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner_box">
+                        <div class="card_img">
+                            <img src="./assets/img/hotel/icon/icon_support4.svg" alt="" class="banner_img">
+                        </div>
+                        <div class="banner_data">
+                            <div class="banner_content-top">
+                                <h3 class="banner_title">Hơn 800+ khách sạn dọc Việt Nam</h3>
+
+                                <div class="banner_detail">
+                                    <span class="banner_subtitle">Hàng nghìn khách sạn, cho phép thoải mái lựa chọn, giá cạnh tranh, phong phú.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="hotel_local section">
+            <h2 class="section_title hotel_local-title">Khách sạn theo địa điểm</h2>
+            <div class="hotel_local-container container swiper-container mySwiper1" id="tour-container">
+                <div class="swiper-wrapper">
+                    <!-- TOUR 1 -->
+                    <div class="hotel_card swiper-slide">
+                        <a href="https://mytour.vn/khach-san/td155/khach-san-tai-da-lat.html?checkIn=17-08-2021&checkOut=18-08-2021&adults=2&rooms=1&children=0" class="hotel_card-link">
+                            <div class="hotel_box">
+                                <img src="./assets/img/hotel//hotel_local/dalat.jpg" alt="" class="hotel_local-img">
+                                <div class="hotel_content">
+                                    <div class="tour_data">
+                                        <h3 class="hotel_title">Đà Lạt</h3>
+                                        <p class="hotel_subtitle">669 Khách Sạn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- TOUR 2 -->
+                    <div class="hotel_card swiper-slide">
+                        <a href="https://mytour.vn/khach-san/td235/khach-san-tai-ha-long.html?checkIn=17-08-2021&checkOut=18-08-2021&adults=2&rooms=1&children=0" class="hotel_card-link">
+                            <div class="hotel_box">
+                                <img src="./assets/img/hotel/hotel_local/halong.jpg" alt="" class="hotel_local-img">
+                                <div class="hotel_content">
+                                    <div class="tour_data">
+                                        <h3 class="hotel_title">Hạ Long</h3>
+                                        <p class="hotel_subtitle">817 Khách Sạn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- TOUR 3 -->
+                    <div class="hotel_card swiper-slide">
+                        <a href="https://mytour.vn/khach-san/td414/khach-san-tai-nha-trang.html?checkIn=17-08-2021&checkOut=18-08-2021&adults=2&rooms=1&children=0" class="hotel_card-link">
+                            <div class="hotel_box">
+                                <img src="./assets/img//hotel/hotel_local/nhatrang.jpg" alt="" class="hotel_local-img">
+                                <div class="hotel_content">
+                                    <div class="tour_data">
+                                        <h3 class="hotel_title">Nha Trang</h3>
+                                        <p class="hotel_subtitle">1168 Khách Sạn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- TOUR 4 -->
+                    <div class="hotel_card swiper-slide">
+                        <a href="https://mytour.vn/khach-san/td503/khach-san-tai-huyen-sa-pa.html?slug=td503&slug=khach-san-tai-huyen-sa-pa.html&checkIn=17-08-2021&checkOut=18-08-2021&adults=2&rooms=1&children=0" class="hotel_card-link">
+                            <div class="hotel_box">
+                                <img src="./assets/img/hotel/hotel_local/sapa.jpg" alt="" class="hotel_local-img">
+                                <div class="hotel_content">
+                                    <div class="tour_data">
+                                        <h3 class="hotel_title">Sapa</h3>
+                                        <p class="hotel_subtitle">415 Khách Sạn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- TOUR 5 -->
+                    <div class="hotel_card swiper-slide">
+                        <a href="https://mytour.vn/khach-san/tp11/khach-san-tai-ha-noi.html?checkIn=17-08-2021&checkOut=18-08-2021&adults=2&rooms=1&children=0" class="hotel_card-link">
+                            <div class="hotel_box">
+                                <img src="./assets/img/hotel/hotel_local/hanoi.jpg" alt="" class="hotel_local-img">
+                                <div class="hotel_content">
+                                    <div class="tour_data">
+                                        <h3 class="hotel_title">Hà Nội</h3>
+                                        <p class="hotel_subtitle">540 Khách Sạn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- TOUR 6 -->
+                    <div class="hotel_card swiper-slide">
+                        <a href="https://mytour.vn/khach-san/tp33/khach-san-tai-ho-chi-minh.html?checkIn=17-08-2021&checkOut=18-08-2021&adults=2&rooms=1&children=0" class="hotel_card-link">
+                            <div class="hotel_box">
+                                <img src="./assets/img/hotel/hotel_local/saigon.jpg" alt="" class="hotel_local-img">
+                                <div class="hotel_content">
+                                    <div class="tour_data">
+                                        <h3 class="hotel_title">Hồ Chí Minh</h3>
+                                        <p class="hotel_subtitle">1245 Khách Sạn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- TOUR 7 -->
+                    <div class="hotel_card swiper-slide">
+                        <a href="https://mytour.vn/khach-san/td446/khach-san-tai-phu-quoc.html?checkIn=17-08-2021&checkOut=18-08-2021&adults=2&rooms=1&children=0" class="hotel_card-link">
+                            <div class="hotel_box">
+                                <img src="./assets/img/hotel/hotel_local/phuquoc.jpg" alt="" class="hotel_local-img">
+                                <div class="hotel_content">
+                                    <div class="tour_data">
+                                        <h3 class="hotel_title">Phú Quốc</h3>
+                                        <p class="hotel_subtitle">689 Khách Sạn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="menu-container container">
+                <h2 class="section_title">Khách sạn có giá tốt</h2>
+
+                <div class="menu-container__btn grid">
+                    <button class="btn-menu active" data-local="1">Tất cả</button>
+                    <button class="btn-menu" data-local="2">Nha Trang</button>
+                    <button class="btn-menu" data-local="3">Đà Lạt</button>
+                    <button class="btn-menu" data-local="4">Hạ Long</button>
+                    <button class="btn-menu" data-local="5">Sapa</button>
+                </div>
+                <div class="menu-container__list grid active-food">
+                    <div class="menu-item" data-local="2">
+                        <div class="heart_item">
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                        <a href="#">
+                            <img src="./assets/img/hotel/hotel1.jpg" alt="" class="menu-image">
+                            <div class="menu-data">
+                                <div class="menu_content-top">
+                                    <h3 class="menu-title">Cozrum Homes Premier Residences</h3>
+                                    <div class="start_item">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-line"></i>
+                                        <i class="ri-star-line"></i>
+                                    </div>
+                                    <div class="address">
+                                        <span><i class="ri-hotel-line"></i></span>
+                                        <p class="menu-detail">Thành Phố Nha Trang</p>
+                                    </div>
+                                </div>
+
+                                <div class="menu_content-bottom">
+                                    <div class="menu-price">650.000đ</div>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <div class="menu-item" data-local="3">
+                        <div class="heart_item">
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                        <a href="#">
+                            <img src="./assets/img/hotel/hotel2.jpg" alt="" class="menu-image">
+                            <div class="menu-data">
+                                <div class="menu_content-top">
+                                    <h3 class="menu-title">Khách sạn Cozy Boutique Đà Lạt</h3>
+                                    <div class="start_item">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-line"></i>
+                                    </div>
+                                    <div class="address">
+                                        <span><i class="ri-hotel-line"></i></span>
+                                        <p class="menu-detail">Thành Phố Đà Lạt </p>
+                                    </div>
+                                </div>
+                                <div class="menu_content-bottom ">
+                                    <div class="menu-price">400.000đ</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu-item" data-local="2">
+                        <div class="heart_item">
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                        <a href="#">
+                            <img src="./assets/img/hotel/hotel3.png" alt="" class="menu-image">
+                            <div class="menu-data">
+                                <div class="menu_content-top">
+                                    <h3 class="menu-title">Khách sạn Stelle Nha Trang</h3>
+                                    <div class="start_item">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-line"></i>
+                                    </div>
+                                    <div class="address">
+                                        <span><i class="ri-hotel-line"></i></span>
+                                        <p class="menu-detail">Thành Phố Nha Trang</p>
+                                    </div>
+                                </div>
+                                <div class="menu_content-bottom ">
+                                    <div class="menu-price">350.000đ</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-item" data-local="5">
+                        <div class="heart_item">
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                        <a href="#">
+                            <img src="./assets/img/hotel/hotel4.jpg" alt="" class="menu-image">
+                            <div class="menu-data">
+                                <div class="menu_content-top">
+                                    <h3 class="menu-title">Khách sạn căn hộ Tiditel</h3>
+                                    <div class="start_item">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                    <div class="address">
+                                        <span> 
+                                        <i class="ri-hotel-line"></i>
+                                    </span>
+                                        <p class="menu-detail">Huyện Sa Pa</p>
+                                    </div>
+                                </div>
+                                <div class="menu_content-bottom ">
+                                    <div class="menu-price">950.000đ</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-item" data-local="2">
+                        <div class="heart_item">
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                        <a href="#">
+                            <img src="./assets/img/hotel/hotel5.jpg" alt="" class="menu-image">
+                            <div class="menu-data">
+                                <div class="menu_content-top">
+                                    <h3 class="menu-title">Khách Sạn Senia Nha Trang</h3>
+                                    <div class="start_item">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-line"></i>
+                                        <i class="ri-star-line"></i>
+                                        <i class="ri-star-line"></i>
+                                    </div>
+                                    <div class="address">
+                                        <span> 
+                                    <i class="ri-hotel-line"></i>
+                                </span>
+                                        <p class="menu-detail">Thành Phố Nha Trang</p>
+                                    </div>
+                                </div>
+                                <div class="menu_content-bottom ">
+                                    <div class="menu-price">690.000đ</div>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <div class="menu-item" data-local="4">
+                        <div class="heart_item">
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                        <a href="#">
+                            <img src="./assets/img/hotel/hotel6.jpg" alt="" class="menu-image">
+                            <div class="menu-data">
+                                <div class="menu_content-top">
+                                    <h3 class="menu-title">Khách sạn Babylon Hạ Long</h3>
+                                    <div class="start_item">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-line"></i>
+                                        <i class="ri-star-line"></i>
+                                    </div>
+                                    <div class="address">
+                                        <span> 
+                                    <i class="ri-hotel-line"></i>
+                                </span>
+                                        <p class="menu-detail">Thành Phố Hạ Long</p>
+                                    </div>
+                                </div>
+                                <div class="menu_content-bottom ">
+                                    <div class="menu-price">990.000đ</div>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <div class="menu-item" data-local="5">
+                        <div class="heart_item">
+                            <i class="ri-heart-line" id="heart-icon"></i>
+                        </div>
+                        <a href="#">
+                            <img src="./assets/img/hotel/hotel7.jpg" alt="" class="menu-image">
+                            <div class="menu-data">
+                                <div class="menu_content-top">
+                                    <h3 class="menu-title">Khách sạn Beautiful Sapa Boutique
+                                    </h3>
+                                    <div class="start_item">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-line"></i>
+                                    </div>
+                                    <div class="address">
+                                        <span> 
+                                        <i class="ri-hotel-line"></i>
+                                    </span>
+                                        <p class="menu-detail">Huyện Sapa</p>
+                                    </div>
+                                </div>
+                                <div class="menu_content-bottom ">
+                                    <div class="menu-price">625.000đ</div>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <div class="menu-item" data-local="4">
+                        <div class="heart_item">
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                        <a href="#">
+                            <img src="./assets/img/hotel/hotel8.jpg" alt="" class="menu-image">
+                            <div class="menu-data">
+                                <div class="menu_content-top">
+                                    <h3 class="menu-title">Queen Villa Beverly Hills Hạ Long</h3>
+                                    <div class="start_item">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-line"></i>
+                                        <i class="ri-star-line"></i>
+                                        <i class="ri-star-line"></i>
+                                    </div>
+                                    <div class="address">
+                                        <span> 
+                                    <i class="ri-hotel-line"></i>
+                                </span>
+                                        <p class="menu-detail">Thành Phố Hạ Long</p>
+                                    </div>
+                                </div>
+                                <div class="menu_content-bottom ">
+                                    <div class="menu-price">2.550.000đ</div>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+
+                </div>
+        </section>
+
+        <section class="subscribe section">
+            <div class="subscribe_bg">
+                <img src="./assets/img/subscribe.jpg" alt="" class="subscribe_img">
+                <div class="subscribe_data">
+                    <div class="subscribe_container container">
+                        <h2 class="section_title subscribe_title">Tiết kiệm <br> thời gian và tiền bạc!</h2>
+                        <p class="subscribe_description">Hãy đăng ký và chúng tôi sẽ gửi những ưu đãi tốt nhất cho bạn</p>
+                        <form action="" class="subscribe_form">
+                            <input type="text" placeholder="Email của bạn" name="email" class="subscribe_input">
+                            <button class="button">
+                            Subscribe
+                        </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sponsor section">
+            <div class="sponsor_container container grid">
+                <div class="sponsor_content">
+                    <img src="./assets/img/sponsor/agoda.png" alt="agoda-icon" class="sponsor_img">
+                </div>
+                <div class="sponsor_content">
+                    <img src="./assets/img/sponsor/booking.png" alt="booking-icon" class="sponsor_img">
+                </div>
+                <div class="sponsor_content">
+                    <img src="./assets/img/sponsor/kayak.png" alt="kayak-icon" class="sponsor_img">
+                </div>
+                <div class="sponsor_content">
+                    <img src="./assets/img/sponsor/rentalcars.png" alt="rentalcars-icon" class="sponsor_img">
+                </div>
+                <div class="sponsor_content">
+                    <img src="./assets/img/sponsor/opentable.png" alt="opentable-icon" class="sponsor_img">
+                </div>
+                <div class="sponsor_content">
+                    <img src="./assets/img/sponsor/priceline.png" alt="priceline-icon" class="sponsor_img">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="section footer">
+        <div class="footer_container container grid">
+            <div class="footer_content grid">
+                <div class="footer_data">
+                    <h3 class="footer_title">Travel VN</h3>
+                    <p class="footer_description">Công ty cổ phần du lịch Việt Nam </p>
+
+                    <div class="footer_social">
+                        <a href="https://www.fb.com" class="footer_social-link" target="_blank">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com" class="footer_social-link" target="_blank"><i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com" class="footer_social-link" target="_blank">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="https://www.youtube.com" class="footer_social-link" target="_blank"><i class="ri-youtube-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer_data">
+                    <h3 class="footer_subtitle">Giới Thiệu</h3>
+                    <ul>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">Chúng Tôi</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">Travel VN Blog</a>
+                        </li>
+                        <!-- <li class="footer_item">
+                            <a href="#" class="footer_link"></a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="footer_data">
+                    <h3 class="footer_subtitle">Trợ Giúp</h3>
+                    <ul>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">Trung Tâm Trợ Giúp</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">Câu Hỏi Thường Gặp</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">Tuyển Dụng</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">Liên Hệ Chúng Tôi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_data">
+                    <h3 class="footer_subtitle">Đối Tác</h3>
+                    <ul>
+                        <li class="footer_item">
+                            <a href="https://ycs.agoda.com/vi-vn/kipp/public/home" class="footer_link">Cổng thông tin đối tác YCS</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">Quảng Cáo Trên Travel VN</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">Đối Tác Liên Kết</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">Đối Tác Kết Nối</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_right">
+                <p class="footer_copy">Copyright &#169; 2021 - Công ty cổ phần du lịch Việt Nam Travel VN</p>
+                <div class="footer_terms">
+                    <a href="#" class="footer_terms-link">Điều Kiện & Điều Khoản</a>
+                    <a href="#" class="footer_terms-link">Chính Sách Bảo Mật</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup_icon"></i>
+    </a>
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/hotel.js"></script>
+    <script src="./assets/js/home.js"></script>
+</body>
+
+</html>
